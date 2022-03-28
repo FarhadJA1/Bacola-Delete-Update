@@ -1,0 +1,135 @@
+$grey:rgb(124, 124, 124);
+$blue:#429dff;
+$font:sans-serif;
+
+#cart-updated-message{
+    .cart-updated-message{
+        
+        p{
+            border: 1px solid rgb(201, 199, 199);
+            padding: 10px 10px;
+        }
+    }
+}
+#cart-page-content{
+    .cart-page-content{
+        .cart-page-table{
+            table{
+                width: 100%;
+                tr{
+                    height: 70px;
+                    border-bottom: 1px solid rgb(201, 199, 199);
+                    th{
+                        color: $grey;
+                        font-size: 14px;
+                    }
+                    td{
+                        img{
+                            width: 87px;
+                        }
+                        button{
+                            border-radius: 50%;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+        .coupon{
+            .apply{
+                display: flex;
+                input{
+                    margin-right: 20px;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                }
+                .apply-btn{
+                    width: 180px;
+                    background-color: navy;
+                    border: none;
+                    &:focus{
+                        box-shadow: none;
+                    }
+
+                }
+            }
+            .update{
+                display: flex;
+                justify-content: end;
+                .update-btn{
+                    background-color: rgb(209, 207, 207);
+                    color: gray;
+                    border: none;
+                }
+            }
+        }
+        .cart-totals{
+            border: 1px solid rgb(201, 199, 199);
+            border-radius: 10px;
+            padding: 20px 20px;
+            .subtotal{
+                display: flex;
+                justify-content: space-between;
+            }
+            .shipping{
+                border: 1px solid rgb(201, 199, 199);
+                
+                .shipping-title{
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    border-right: 1px solid rgb(201, 199, 199);
+                    padding-left: 10px;
+                
+                }
+                .shipping-content{
+                    display: flex;
+                    justify-content: end;
+                    text-align: end;
+                    ul{
+                        li{
+                            list-style: none;
+                            font-size: 14px;
+                            a{
+                                text-decoration: none;
+                                color: $blue;
+                                &:hover{
+                                    color: navy;
+                                    text-decoration: underline;
+                                }
+                            }
+                            input{
+                                &:focus{
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+            .car-page-total-price{
+                display: flex;
+                justify-content: space-between;
+                border-bottom: 1px solid rgb(201, 199, 199);
+                padding-bottom: 10px;
+                strong{
+                    font-size: 25px;
+                }
+            }
+            .proceed{
+                padding: 10px;
+                button{
+                    border: none;
+                    &:focus{
+                        box-shadow: none;
+                    }
+                    &:hover{
+                        background-color: rgb(255, 73, 73);
+                    }
+                }
+            }
+        }
+    }
+}

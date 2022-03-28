@@ -1,0 +1,7 @@
+﻿@model HomeVM
+<ul class="dropdown-menu mt-5">
+    @foreach (var category in Model.Categories)
+    {
+        <li><a href="">@category.Name <i class="fas fa-angle-right"></i></a> </li>
+    }
+</ul>

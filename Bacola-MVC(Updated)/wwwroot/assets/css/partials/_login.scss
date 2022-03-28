@@ -1,0 +1,85 @@
+
+$grey:rgb(124, 124, 124);
+$blue:#429dff;
+$font:sans-serif;
+#root{
+    .root{
+        a{
+            text-decoration: none;
+            font-family: sans-serif;
+            font-size: 12px;
+            color: black;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        i{
+            color: rgb(158, 158, 158);
+            font-size: 12px;
+        }
+        span{
+            color: rgb(158, 158, 158);
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+    }
+}
+#login-register{
+    .login-register{
+        .login{
+            h4{
+                font-size: 21px;
+                font-family: fantasy;
+            }
+            label{
+                font-size: 14px;
+            }
+            .forget{
+                a{
+                    color: $blue;
+                    text-decoration: none;
+                    &:hover{
+                        color: navy;
+                        text-decoration: underline;
+                    }
+                    
+                }
+            }
+            button{
+                background-color: navy;
+                border: none;
+            }
+            input{
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+
+            
+        }
+        .register{
+            h4{
+                font-size: 21px;
+                font-family: fantasy;
+            }
+            label{
+                font-size: 14px;
+            }
+            p{
+                font-size: 14px;
+                a{
+                    color: rgb(255, 49, 49);
+                }
+            }
+            button{
+                background-color: navy;
+                border: none;
+            }
+            input{
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}

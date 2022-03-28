@@ -1,0 +1,70 @@
+$grey:rgb(124, 124, 124);
+$blue:#429dff;
+$font:sans-serif;
+
+#about-greeting{
+    .about-header{
+        width: 100%;
+        height: 800px;
+        position: relative;
+        img{
+            
+            width: 100%;
+            height: 100%;
+            filter: brightness(50%);
+        }
+        .about-title{
+            position: absolute;
+            top: 40%;
+            left: 36%;
+            h1{
+                color: white;
+                font-size: 60px;
+                font-family: sans-serif;
+                text-align: center;
+            }
+            p{
+                color: white;
+                font-size: 17px;
+                font-family: sans-serif;
+                text-align: center;
+                letter-spacing: 8px;
+            }
+        }
+    }
+}
+#about-second-text{
+    .about-second-text{
+        h1{
+            padding-left: 10%;
+            font-family: sans-serif;
+        }
+        p{
+            padding-left: 10%;
+            font-family: sans-serif;
+        }
+    }
+}
+#about-image-info{
+    .about-image-info{
+        position: relative;
+        p{
+            font-family: sans-serif;
+        }
+        h1{
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+        .about-info-text{
+            margin-top: 25%;
+        }
+        .under-photo-text{
+            position: absolute;
+            bottom: 8%;
+            left: 15%;
+            padding: 50px;
+            background-color: white;
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,293 @@
+﻿@model Dictionary<string, string>
+<header>
+
+    <section>
+        <div class="top-info">
+            <p>Due to the</p>
+            <p class="second-p">COVID 19</p>
+            <p>epidemic, orders may be processed with a slight delay</p>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row top">
+                <div class="col-md-4 col-sm-6 top-nav">
+                    <nav>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="login.html">My Account</a></li>
+                            <li><a href="">Wishlist</a></li>
+                            <li><a href="">Order Tracking</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row top-right col-md-8 col-sm-6">
+                    <div class="col-md-5 col-sm-4 top-center-info">
+                        <i class="fas fa-hand-paper"></i>
+                        <span>100% Secure delivery without contacting the courier</span>
+                    </div>
+                    <div class="col-md-3 col-sm-4 top-help">
+                        <span>Need help? Call Us:</span>
+                        <a href="">+ 0020 500</a>
+                    </div>
+                    <div class="col-md-4 sm-4 top-drops">
+                        <div class="drop">
+                            <div class="lang-drop">
+                                <button class="drop-btn btn-left">
+                                    English
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="drop-content-left d-none">
+                                    <a href="#">English</a>
+                                    <a href="#">Spanish</a>
+                                    <a href="#">German</a>
+                                </div>
+                            </div>
+                            <div class="money-drop">
+                                <button class="drop-btn btn-right">
+                                    USD
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="drop-content-right d-none">
+                                    <a href="#">USD</a>
+                                    <a href="#">INR</a>
+                                    <a href="#">GBT</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="logo col-md-2 col-sm-2">
+                    <a asp-controller="home" asp-action="index">
+                        <img src="~/assets/img/@Model["HeaderLogo"]" alt="">
+                        <span style="text-decoration:none">Online Grocery Shopping Center</span>
+                    </a>
+
+                </div>
+                <div class="row select-location col-md-2 col-sm-2">
+                    <button type="button" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                        <div class="row">
+                            <div class="col-10">
+                                <p class="your-location-text">Your Location</p>
+                                <p class="select-location-text">Select a location</p>
+                            </div>
+                            <div class="col-2">
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title" id="exampleModalLabel">Choose your Delivery Location</p>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+
+                                </div>
+
+                                <p class="modal-info">
+                                    Enter your address and we will specify the offer for your
+                                    area.
+                                </p>
+                                <div class="modal-body">
+                                    <form class="d-flex">
+                                        <input class="form-control me-2 search-area" type="search"
+                                               placeholder="Search your area" aria-label="Search">
+                                    </form>
+                                    <div class="select">
+                                        <a href="">Choose your loaction</a>
+                                        <span>Clear All</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">Alabama</a>
+                                        <span>Min: $130</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">Alaska</a>
+                                        <span>$120</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">Arizona</a>
+                                        <span>$150</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">California</a>
+                                        <span>$110</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">Colorado</a>
+                                        <span>$140</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">Florida</a>
+                                        <span>$160</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">Georgia</a>
+                                        <span>$120</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">Kansas</a>
+                                        <span>$170</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">Minessota</a>
+                                        <span>$120</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">New York</a>
+                                        <span>$110</span>
+                                    </div>
+                                    <div class="select">
+                                        <a href="">Wasgington</a>
+                                        <span>$130</span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 search">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search for products"
+                           aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="row col-md-3 col-sm-3">
+                    <div class="col-3 account">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="col-3 total-price">
+                        <span>$0.00</span>
+                    </div>
+                    <div class="col-3 cart">
+                        <a asp-controller="cart" asp-action="index">
+                            <i class="fas fa-shopping-basket"></i><sup><span>0</span></sup>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="A row mt-3">
+                <div class="dropdown categories col-md-3">
+                    <div class="btn-group">
+                        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-bars"></i> All categories <span>TOTAL 63 PRODUCTS</span>
+                        </button>
+                        @await Component.InvokeAsync("Category")
+                    </div>
+                </div>
+                <div class="col-md-8 nav-buttons">
+                    <ul>
+                        <li>
+                            <button id="home-btn" type="button" class="btn btn-light">
+                                <a href="index.html">HOME</a>
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button id="shop-btn" type="button" class="btn btn-light">
+                                <a href="shop.html">SHOP</a>
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-light">
+                                <i class="fas fa-fish"></i>MEATS &
+                                SEAFOOD
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-light">
+                                <i class="fas fa-bread-slice"></i>BAKERY
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-light">
+                                <i class="fas fa-mug-hot"></i>BEVERAGES
+                            </button>
+                        </li>
+                        <li><button type="button" class="btn btn-light"><a href="blog.html">BLOG</a></button></li>
+                        <li>
+                            <button type="button" class="btn btn-light"><a href="contact.html">CONTACT</a></button>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="home-shop">
+                <div class="row">
+                    <div class="home-nav">
+                        <ul>
+                            <li><a href="">HOME 1</a></li>
+                            <li><a href="">HOME 2</a></li>
+                            <li><a href="">HOME 3</a></li>
+                            <li><a href="">HOME 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="shop-nav col-12">
+                        <ul>
+                            <span>Shop List</span>
+                            <li>Shop Default</li>
+                            <li>Shop Right Sidebar</li>
+                            <li>Shop Wide</li>
+                            <li>List Left Sidebar</li>
+                            <li>Load More Button</li>
+                            <li>Infinite Scrolling</li>
+                        </ul>
+                        <ul>
+                            <span>Product Detail</span>
+                            <li>Product Detail</li>
+                            <li>Product Variable</li>
+                            <li>Product Grouped</li>
+                            <li>Product External</li>
+                            <li>Product Downloadable</li>
+                            <li>Product With Video</li>
+                        </ul>
+                        <ul>
+                            <span>Product Types</span>
+                            <li>Single Type 1</li>
+                            <li>Single Type 2</li>
+                            <li>Single Type 3</li>
+                            <li>Single Type 4</li>
+                            <li>Thumbnails Left</li>
+                            <li>Zoom Image</li>
+                        </ul>
+                        <ul>
+                            <span>Shop Pages</span>
+                            <li>Cart</li>
+                            <li>Checkout</li>
+                            <li>My Account</li>
+                            <li>Wishlist</li>
+                            <li>Order Tracking</li>
+                            <li>Order on Whatsapp</li>
+                        </ul>
+                        <ul>
+                            <span>Shop Layouts</span>
+                            <li>Two Columns</li>
+                            <li>Three Columns</li>
+                            <li>Three Columns Wide</li>
+                            <li>Four Columns</li>
+                            <li>Four Columns Wide</li>
+                            <li>Five Columns Wide</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+</header>

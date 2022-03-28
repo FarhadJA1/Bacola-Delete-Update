@@ -1,0 +1,970 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+@model HomeVM
+
+<main>
+    <section id="top-slider">
+        <div class="owl-carousel owl-theme advert-top mt-3">
+            <div class="item first">
+                <img src="~/assets/img/@Model.Slider.Image" alt="">
+
+                <div class="first-advert-text">
+                    <span class="first-top-left">@Model.Slider.Header</span>
+                    <span class="first-top-right">@Model.Slider.Offer</span>
+                    <h1 class="first-top-header">@Model.Slider.UpTitle</h1>
+                    <h1 class="first-bottom-header">@Model.Slider.DownTitle</h1>
+                    <p class="first-text">@Model.Slider.Description</p>
+                    <span class="first-bottom-left">from</span>
+                    <span class="first-bottom-right">@Model.Slider.Price</span>
+                    <div class="mt-3">
+                        <button type="button" class="first-advert-btn btn btn-primary">
+                            Shop Now <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item second">
+                <div>
+                    <img src="~/assets/img/slider-image-alpro.jpg" alt="">
+                </div>
+
+                @* <div class="second-advert-text">
+                    <span class="second-top-left">EXCLUSIVE OFFER</span>
+                    <span class="second-top-right">-40% OFF</span>
+                    <h1 class="second-top-header">Quality Freshness</h1>
+                    <h1 class="second-bottom-header">Guaranted</h1>
+                    <p class="second-text">Only this week. Don't miss...</p>
+                    <span class="second-bottom-left">from</span>
+                    <span class="second-bottom-right">$14.35</span>
+                    <div class="mt-3">
+                        <button type="button" class="second-advert-btn btn btn-primary">Shop Now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div> *@
+            </div>
+        </div>
+    </section>
+    <section id="quick-categories">
+        <div class="container mt-5 me-2">
+            <div class="q-categories">
+
+                <div class="row">
+                    <div class="custom-card col-lg-2">
+                        <div class="card">
+                            <div style="padding: 20%;">
+                                <img src="~/assets/img/bubly img.jpg" class="card-img-top" alt="...">
+                                <div class="bubly-card-body card-body">
+                                    <h6>Beverages</h6>
+                                    <p>11 items</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-card col-2">
+                        <div class="up">
+                            <div class="card" style="max-width: 540px;">
+                                <div class="content row g-0">
+                                    <div class="col-md-4">
+                                        <img src="~/assets/img/caramel cashew.jpg" class="img-fluid rounded-start"
+                                             alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h6>Biscuits &</h6>
+                                            <h6>Snacks</h6>
+                                            <p>6 items</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="down">
+                            <div class="card" style="max-width: 540px;">
+                                <div class="content row g-0">
+                                    <div class="col-lg-4">
+                                        <img src="~/assets/img/apple.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="card-body">
+                                            <h6>Fruits &</h6>
+                                            <h6>Vegetables</h6>
+                                            <p>12 items</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-card col-lg-2">
+                        <div>
+                            <div class="up">
+                                <div class="card" style="max-width: 540px;">
+                                    <div class="content row g-0">
+                                        <div class="col-lg-4">
+                                            <img src="~/assets/img/muffin.jpg" class="img-fluid rounded-start"
+                                                 alt="...">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="card-body">
+                                                <h6>Breads &</h6>
+                                                <h6>Bakery</h6>
+                                                <p>6 items</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="down">
+                                <div class="card" style="max-width: 540px;">
+                                    <div class="content row g-0">
+                                        <div class="col-md-4">
+                                            <img src="~/assets/img/category-image2.png"
+                                                 class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="card-body">
+                                                <h6>Grocery &</h6>
+                                                <h6>Staples</h6>
+                                                <p>7 items</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-card col-md-2">
+                        <div>
+                            <div class="up">
+                                <div class="card">
+                                    <div class="content row g-0">
+                                        <div class="col-md-4" style="display: flex; align-items: center;">
+                                            <img src="~/assets/img/assorted cheese.jpg"
+                                                 class="img-fluid rounded-start" alt="...">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="card-body">
+                                                <h6>Breakfast &</h6>
+                                                <h6>Dairy</h6>
+                                                <p>8 items</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="down">
+                                <div class="card" style="max-width: 540px;">
+                                    <div class="content row g-0">
+                                        <div class="col-lg-4">
+                                            <img src="~/assets/img/household-1.jpg" class="img-fluid rounded-start"
+                                                 alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h6>Household</h6>
+                                                <h6>Needs</h6>
+                                                <p>1 items</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-card col-md-2">
+                        <div>
+                            <div class="up">
+                                <div class="card" style="max-width: 540px;">
+                                    <div class="content row g-0">
+                                        <div class="col-md-4">
+                                            <img src="~/assets/img/hoogen.png" class="img-fluid rounded-start"
+                                                 alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h6>Biscuits Foods</h6>
+                                                <p>7 items</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="down">
+                                <div class="card" style="max-width: 540px;">
+                                    <div class="content row g-0">
+                                        <div class="col-lg-4">
+                                            <img src="~/assets/img/meat.jpg" class="img-fluid rounded-start"
+                                                 alt="...">
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="card-body">
+                                                <h6>Meats &</h6>
+                                                <h6>Seafood</h6>
+                                                <p>5 items</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    <section id="timer-discount">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-3 timer">
+                    <div class="timer-elements">
+                        <div class="timer-header">
+                            <span>Deals of the</span>
+                            <span class="week">week!</span>
+                        </div>
+                        <div class="clock"></div>
+                        <p>Remains until the end of the offer</p>
+                        <div class="photo">
+                            <div class="offer">
+                                <span>19%</span>
+                            </div>
+                            <img src="~/assets/img/product-image-50.jpg" alt="">
+                        </div>
+                        <div class="discount">
+                            <span class="lined">$5.49</span>
+                            <span class="red">$4.49</span>
+                        </div>
+                        <div class="link">
+                            <a href="">Chobani Complete Vanilla Greek Yogurt</a>
+                        </div>
+                        <div class="stock">
+                            <span class="kg">1 kg</span>
+                            <span class="in">IN STOCK</span>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>1</span>
+                        </div>
+                        <div class="avialable">
+                            <span class="text">AVIALABLE:</span>
+                            <span class="number">49</span>
+                        </div>
+                        <div class="progress mt-3">
+                            <div class="success"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="col-3 first-discount-product ">
+                    @foreach (var discountProducts in Model.DiscountProducts)
+	                {
+                    <div class="card discount-card">
+                        <div class="discount-image">
+                            <img src="~/assets/img/@discountProducts.Image" class="card-img-top" alt="...">
+                            <span class="percentage">@discountProducts.Discount</span>
+                            <span class="recommend">RECOMMENDED</span>
+
+                        </div>
+
+                        <div class="card-body">
+                            <a class="card-title">@discountProducts.Name</a>
+                            <p class="stock">IN STOCK</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star grey"></i>
+                            <span class="one">1</span>
+                            <div class="prices">
+                                <span class="first-price">$@discountProducts.FirstPrice</span>
+                                <span class="second-price">$@discountProducts.SecondPrice</span>
+                            </div>
+                            <div class="button display-none" id="add-to-cart">
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+	}
+                    
+                    @*<div class="card discount-card">
+                        <div class="discount-image">
+                            <img src="~/assets/img/crispy-wings.jpg" class="card-img-top" alt="...">
+
+                        </div>
+
+                        <div class="card-body">
+                            <a class="card-title">Foster Farms Takeout Crispy Classic Buffalo Wings</a>
+                            <p class="stock">IN STOCK</p>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star grey"></i>
+                            <span class="one">1</span>
+                            <div class="prices">
+                                <span class="first-price-range">$7.35</span>
+                                <span>-</span>
+                                <span class="second-price-range">$49.99</span>
+                            </div>
+                            <div class="button display-none">
+                                <a href="#" class="btn btn-primary">View products</a>
+                            </div>
+                        </div>
+                    </div>*@
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section id="shortcuts">
+        <div class="big-shortcuts mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="card bg-dark text-white">
+                            <img src="~/assets/img/bacola-banner-11.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <p class="card-text left-first">WEEKEND DISCOUNT 40%</p>
+                                <h5 class="card-title">Cookie and Ice Cream</h5>
+                                <p class="card-text second">Bacola Weekend Discount</p>
+                                <button type="button" class="btn btn-primary shortcut-btn-left">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="card bg-dark text-white">
+                            <img src="~/assets/img/bacola-banner-12.jpg" class="card-img" alt="...">
+                            <div class="card-img-overlay">
+                                <p class="card-text right-first">WEEKEND DISCOUNT 30%</p>
+                                <h5 class="card-title">Cookie and Ice Cream</h5>
+                                <p class="card-text second">Bacola Weekend Discount</p>
+                                <button type="button" class="btn btn-primary shortcut-btn-right">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="best-sellers-shortcut">
+        <div class="best-sellers-shortcut mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="best-sellers-content">
+                        <div class="best-sellers-text">
+                            <h6>BEST SELLERS</h6>
+                            <p>Do not miss the current offers until the end of March.</p>
+                        </div>
+                        <div class="best-sellers-btn">
+                            <button type="button" class="btn btn-light">
+                                View All <i class="fas fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bottom-slider">
+        <div class="bottom-slider mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="slider-card card">
+                                <div class="bottom-slider-image">
+                                    <img src="~/assets/img/bottom-meat-slider.jpg" class="card-img-top" alt="...">
+                                    <span class="percentage">38%</span>
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-title">USDA Choise Angus Beef Stew Meat</a>
+                                    <p class="stock">IN STOCK</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star grey"></i>
+                                    <span class="one">1</span>
+                                    <div class="prices">
+                                        <span class="first-price">$79.39</span>
+                                        <span class="second-price">$49.99</span>
+                                    </div>
+                                    <div class="bottom-slider-btn mt-2">
+                                        <a href="#" class="btn btn-warning">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-card card">
+                                <div class="bottom-slider-image">
+                                    <img src="~/assets/img/seafood.jpg" class="card-img-top" alt="...">
+                                    <span class="percentage">16%</span>
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-title">Encore Seafoods Stuffed Alascan Salmon</a>
+                                    <p class="stock">IN STOCK</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="one">1</span>
+                                    <div class="prices">
+                                        <span class="first-price">$32.49</span>
+                                        <span class="second-price">$27.49</span>
+                                    </div>
+                                    <div class="bottom-slider-btn mt-2">
+                                        <a href="#" class="btn btn-warning">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-card card">
+                                <div class="bottom-slider-image">
+                                    <img src="~/assets/img/product-image-50.jpg" class="card-img-top" alt="...">
+                                    <span class="percentage">19%</span>
+                                    <span class="recommend">RECOMMENDED</span>
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-title">Chobani Complete Vanilla Greek Yogurt</a>
+                                    <p class="stock">IN STOCK</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="one">1</span>
+                                    <div class="prices">
+                                        <span class="first-price">$5.49</span>
+                                        <span class="second-price">$4.49</span>
+                                    </div>
+                                    <div class="bottom-slider-btn mt-2">
+                                        <a href="#" class="btn btn-warning">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-card card">
+                                <div class="bottom-slider-image">
+                                    <img src="~/assets/img/broccoli.jpg" class="card-img-top" alt="...">
+                                    <span class="percentage">29%</span>
+                                    <span class="organic">Organic</span>
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-title">Fresh Organic Broccoli Crowns</a>
+                                    <p class="stock">IN STOCK</p>
+                                    <br>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star grey"></i>
+                                    <span class="one">1</span>
+                                    <div class="prices">
+                                        <span class="first-price">$6.77</span>
+                                        <span class="second-price">$4.85</span>
+                                    </div>
+                                    <div class="bottom-slider-btn mt-2">
+                                        <a href="#" class="btn btn-warning">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-card card">
+                                <div class="bottom-slider-image">
+                                    <img src="~/assets/img/chiao-cheese.jpg" class="card-img-top" alt="...">
+                                    <span class="percentage">19%</span>
+                                    <span class="organic">Organic</span>
+
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-title">Field Roast Chao Cheese Creamy Original</a>
+                                    <p class="stock">IN STOCK</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="one">1</span>
+                                    <div class="prices">
+                                        <span class="first-price">$24.00</span>
+                                        <span class="second-price">$19.50</span>
+                                    </div>
+                                    <div class="bottom-slider-btn mt-2">
+                                        <a href="#" class="btn btn-warning">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-card card">
+                                <div class="bottom-slider-image">
+                                    <img src="~/assets/img/italian-meatballs.jpg" class="card-img-top" alt="...">
+                                    <span class="percentage">23%</span>
+                                    <span class="recommend">RECOMMENDED</span>
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-title">All Natural Italian-Style Chicken Meatballs</a>
+                                    <p class="stock">IN STOCK</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star grey"></i>
+                                    <span class="one">1</span>
+                                    <div class="prices">
+                                        <span class="first-price">$9.35</span>
+                                        <span class="second-price">$7.25</span>
+                                    </div>
+                                    <div class="bottom-slider-btn mt-2">
+                                        <a href="#" class="btn btn-warning">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-card card">
+                                <div class="bottom-slider-image">
+                                    <img src="~/assets/img/boom-chicka.jpg" class="card-img-top" alt="...">
+                                    <span class="percentage">24%</span>
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-title">Angie’s Boomchickapop Sweet & Salty Kettle Corn</a>
+                                    <p class="stock">IN STOCK</p>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star grey"></i>
+                                    <span class="one">1</span>
+                                    <div class="prices">
+                                        <span class="first-price">$4.29</span>
+                                        <span class="second-price">$3.29</span>
+                                    </div>
+                                    <div class="bottom-slider-btn mt-2">
+                                        <a href="#" class="btn btn-warning">Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slider-card card">
+                                <div class="bottom-slider-image">
+                                    <img src="~/assets/img/blue-diamond.jpg" class="card-img-top" alt="...">
+                                    <span class="percentage">10%</span>
+                                    <span class="organic">Organic</span>
+                                </div>
+                                <div class="card-body">
+                                    <a class="card-title">Blue Diamond Almonds Lightly Salted</a>
+                                    <p class="stock">IN STOCK</p>
+
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="one">1</span>
+                                    <div class="prices">
+                                        <span class="first-price">$11.68</span>
+                                        <span class="second-price">$10.58</span>
+                                    </div>
+                                    <div class="bottom-slider-btn mt-2">
+                                        <a href="#" class="btn btn-warning">Add to cart</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="advert">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="save">
+                    <h3>SAVE AN EXTRA 5-10 % ON EVERY AUTOSHIP ORDER!</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="buy-now">
+        <div class="container">
+            <div class="row">
+                <div class="buy-now mt-4">
+                    <div class="custom-col">
+                        <div class="buy-now-card card">
+                            <div class="buy-now-image">
+                                <img src="~/assets/img/zevia-drink.jpg" class="card-img-top" alt="...">
+                                <span class="percentage">26%</span>
+                            </div>
+                            <div class="card-body">
+                                <a class="card-title">Zevia Kidz Strawberry Lemonade Zero Calorie Soda</a>
+                                <p class="stock">IN STOCK</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="one">1</span>
+                                <div class="prices">
+                                    <span class="first-price">$7.95</span>
+                                    <span class="second-price">$5.95</span>
+                                </div>
+                                <div class="buy-now-btn display-none">
+                                    <a href="#" class="btn btn-primary">Buy Product</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="buy-now-card card">
+                            <div class="buy-now-image">
+                                <img src="~/assets/img/wheat-thins.jpg" class="card-img-top" alt="...">
+                                <span class="percentage">26%</span>
+                            </div>
+                            <div class="card-body">
+                                <a class="card-title">Wheat Thins Original Crackers</a>
+                                <p class="stock">IN STOCK</p>
+                                <br>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="one">1</span>
+                                <div class="prices">
+                                    <span class="first-price">$5.00</span>
+                                    <span class="second-price">$3.00</span>
+                                </div>
+                                <div class="buy-now-btn display-none">
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="buy-now-card card">
+                            <div class="buy-now-image">
+                                <img src="~/assets/img/werthers.jpg" class="card-img-top" alt="...">
+                                <span class="percentage">40%</span>
+                            </div>
+                            <div class="card-body">
+                                <a class="card-title">Werther's Original Caramel Hard Candies</a>
+                                <p class="stock">IN STOCK</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="one">1</span>
+                                <div class="prices">
+                                    <span class="first-price">$20.00</span>
+                                    <span class="second-price">$4.97</span>
+                                </div>
+                                <div class="buy-now-btn display-none">
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="buy-now-card card">
+                            <div class="buy-now-image">
+                                <img src="~/assets/img/protein.jpg" class="card-img-top" alt="...">
+                                <span class="percentage">26%</span>
+                            </div>
+                            <div class="card-body">
+                                <a class="card-title">Warrior Blend Organic</a>
+                                <p class="stock">IN STOCK</p>
+                                <br>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="one">1</span>
+                                <div class="prices">
+                                    <span class="first-price">$39.00</span>
+                                    <span class="second-price">$29.00</span>
+                                </div>
+                                <div class="buy-now-btn display-none">
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="buy-now-card card">
+                            <div class="buy-now-image">
+                                <img src="~/assets/img/egg-bites.jpg" class="card-img-top" alt="...">
+                                <span class="percentage">21%</span>
+                            </div>
+                            <div class="card-body">
+                                <a class="card-title">Vital Farms Pasture - Raised Egg Bites Bacon & Cheddar</a>
+                                <p class="stock">IN STOCK</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="one">1</span>
+                                <div class="prices">
+                                    <span class="first-price">$29.00</span>
+                                    <span class="second-price">$25.00</span>
+                                </div>
+                                <div class="buy-now-btn display-none">
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="buy-now-card card">
+                            <div class="buy-now-image">
+                                <img src="~/assets/img/bottom-meat-slider.jpg" class="card-img-top" alt="...">
+                                <span class="percentage">14%</span>
+                            </div>
+                            <div class="card-body">
+                                <a class="card-title">USDA Choise Angus Beef Stew Meat</a>
+                                <p class="stock">IN STOCK</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="one">1</span>
+                                <div class="prices">
+                                    <span class="first-price">$79.99</span>
+                                    <span class="second-price">$49.99</span>
+                                </div>
+                                <div class="buy-now-btn display-none">
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="buy-now-card card">
+                            <div class="buy-now-image">
+                                <img src="~/assets/img/mango-drink.jpg" class="card-img-top" alt="...">
+                                <span class="percentage">38%</span>
+                            </div>
+                            <div class="card-body">
+                                <a class="card-title">Tropicana Pineapple Mango Drink</a>
+                                <p class="stock">IN STOCK</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="one">1</span>
+                                <div class="prices">
+                                    <span class="first-price">$3.29</span>
+                                    <span class="second-price">$2.29</span>
+                                </div>
+                                <div class="buy-now-btn display-none">
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="buy-now-card card">
+                            <div class="buy-now-image">
+                                <img src="~/assets/img/lemon.jpg" class="card-img-top" alt="...">
+                                <span class="percentage">31%</span>
+                            </div>
+                            <div class="card-body">
+                                <a class="card-title">Organic Sweet Lime</a>
+                                <p class="stock">IN STOCK</p>
+                                <br>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="one">1</span>
+                                <div class="prices">
+                                    <span class="first-price">$6.99</span>
+                                    <span class="second-price">$5.99</span>
+                                </div>
+                                <div class="buy-now-btn display-none">
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="buy-now-card card">
+                            <div class="buy-now-image">
+                                <img src="~/assets/img/strawberry.jpg" class="card-img-top" alt="...">
+                                <span class="percentage">15%</span>
+                            </div>
+
+                            <div class="card-body">
+                                <a class="card-title">Fresh Organic Strawberry</a>
+                                <p class="stock">IN STOCK</p>
+                                <br>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="one">1</span>
+                                <div class="prices">
+                                    <span class="first-price">$12</span>
+                                    <span class="second-price">$9</span>
+                                </div>
+                                <div class="buy-now-btn display-none">
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-col">
+                        <div class="buy-now-card card">
+                            <div class="buy-now-image">
+                                <img src="~/assets/img/solti.jpg" class="card-img-top" alt="...">
+                                <span class="percentage">25%</span>
+                            </div>
+
+                            <div class="card-body">
+                                <a class="card-title">Sol-ti Coconut Charcoal SuperAde</a>
+                                <p class="stock">IN STOCK</p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="one">1</span>
+                                <div class="prices">
+                                    <span class="first-price">$12</span>
+                                    <span class="second-price">$9</span>
+                                </div>
+                                <div class="buy-now-btn display-none">
+                                    <a href="#" class="btn btn-primary">Add to cart</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="picture-adverts">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-4">
+                    <div class="card bg-dark text-white">
+                        <img src="~/assets/img/egg-advert.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="card-text up">WEEKEND DISCOUNT 20%</p>
+                            <h3 class="card-title">Natural Eggs</h3>
+                            <p class="card-text down">Eat one every day</p>
+                            <button type="button" class="img-advert-btn btn btn-light">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bg-dark text-white">
+                        <img src="~/assets/img/coffee-advert.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="card-text up">WEEKEND DISCOUNT 40%</p>
+                            <h3 class="card-title">Taste the Best</h3>
+                            <p class="card-text down">Shine the morning</p>
+                            <button type="button" class="img-advert-btn btn btn-light">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card bg-dark text-white">
+                        <img src="~/assets/img/bread-advert.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <p class="card-text up">WEEKEND DISCOUNT 30%</p>
+                            <h3 class="card-title">Card title</h3>
+                            <p class="card-text down">Last updated 3 mins ago</p>
+                            <button type="button" class="img-advert-btn btn btn-light">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mt-4">
+                    <div class="card bg-dark text-white">
+                        <img src="~/assets/img/water-advert.jpg" class="card-img" alt="...">
+
+                    </div>
+                </div>
+                <div class="col-4 mt-4">
+                    <div class="card bg-dark text-white">
+                        <img src="~/assets/img/milk-advert.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 mt-4">
+                    <div class="card bg-dark text-white">
+                        <img src="~/assets/img/ice-cream-advert.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-4 info">
+                    <p class="info-header">TIPS & TRICKS</p>
+                    <p class="info-text">But I must explain to you how all this mistaken idea</p>
+                    <span class="info-date">3 May 2021</span>
+                    <span class="info-comments">3 comments</span>
+                    <span class="info-italic">by</span>
+                    <span class="info-name">Bacola</span>
+                </div>
+                <div class="col-4 info">
+                    <p class="info-header">GROCERY</p>
+                    <p class="info-text">The Problem With Typefaces on the Web</p>
+                    <span class="info-date">3 May 2021</span>
+                    <span class="info-comments">3 comments</span>
+                    <span class="info-italic">by</span>
+                    <span class="info-name">Bacola</span>
+                </div>
+                <div class="col-4 info">
+                    <p class="info-header">GROCERY</p>
+                    <p class="info-text">English Breakfast Tea With Tasty Donut Desserts</p>
+                    <span class="info-date">3 May 2021</span>
+                    <span class="info-comments">2 comments</span>
+                    <span class="info-italic">by</span>
+                    <span class="info-name">Bacola</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>

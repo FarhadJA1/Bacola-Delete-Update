@@ -1,0 +1,325 @@
+$grey:rgb(124, 124, 124);
+$blue:#429dff;
+$font:sans-serif;
+.product-categories-checkbox::-webkit-scrollbar {
+    width: 5px;
+}
+   
+.product-categories-checkbox::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+   
+}
+   
+.product-categories-checkbox::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 10px;
+}
+#shop-content{
+    .shop-content{
+        .form-check-label{
+            font-family: sans-serif;
+        }
+        .product-categories-title{
+            font-family: sans-serif;
+        }
+        .form-check-label{
+            color: $grey;
+        }
+        .product-categories-plus{
+            color: $grey;
+            font-size: 10px;
+        }
+
+        .product-categories-checkbox{
+            
+            height:255px ;
+            
+            .beverages{
+                .beverages-label{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                ul{
+                    li{
+                        
+                        list-style: none;
+                    }
+                    
+                }
+            }
+            .breads{
+                .breads-label{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                    }
+                    
+                }
+            }
+            .breakfast{
+                .breakfast-label{
+                    display: flex;
+                    justify-content: space-between;
+                    
+                }
+                ul{
+                    li{
+                        list-style: none;
+                    }
+                    
+                }
+            }
+            .fruits{
+                .fruits-label{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                    }
+                    
+                }
+            }
+            .meats{
+                .meats-label{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                    }
+                    
+                }
+            }
+        }
+
+        .filter-by-range{
+            .filter-by-range-title{
+                font-family: sans-serif;
+            }
+            .slidecontainer {
+                width: 100%;
+            }
+            .slider {
+                -webkit-appearance: none;
+                width: 100%;
+                height: 10px;
+                border-radius: 5px;
+                background: #111111;
+                outline: none;
+                opacity: 0.7;
+                -webkit-transition: .2s;
+                transition: opacity .2s;
+            }
+            .slider:hover {
+                opacity: 1;
+            }
+            
+        }
+        .brands{
+            .brands-content{
+                .brands-check{
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+        .shop-gif{
+            img{
+                width: 100%;
+            }
+        }
+        .shop-banner{
+            position: relative;
+            .shop-banner-image{
+                
+                img{
+                    width: 100%;
+                }
+            }
+            .shop-banner-text{
+                position: absolute;
+                top: 20%;
+                left: 26%;
+                .shop-banner-center-text{
+                    display: flex;
+                    
+                    .second{
+                        margin-left: 10px;
+                        color: rgb(5, 172, 5);
+                    }
+                    
+                }
+                h3{
+                    font-weight: 200;
+                }
+                p{
+                    color: rgb(175, 175, 175);
+                }
+            }
+            
+        }
+        .navbar-nav{
+            position: absolute;
+            right: 0;
+            .nav-item{
+                .dropdown-menu{
+                    min-width: 10px;
+                }
+            }
+        }
+        .shop-view-edit-buttons{
+            i{
+                margin-right: 5px;
+                cursor: pointer;
+                color: rgb(161, 158, 158);
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+        .shop-product-cards{
+            .card{
+                
+                .discount-image{
+                    
+        
+                    img{
+                        position: relative;
+                        margin-left: 20%;
+                        width: 150px;
+                        height: 140px;
+                       
+                    }
+                    .percentage{
+                        position: absolute;
+                        top: 5%;
+                        left: 5%;
+                        border: 1px solid $blue;
+                        color: white;
+                        background-color: $blue;
+                        border-radius: 5px;
+                        
+                    }
+                    .recommend{
+                        position: absolute;
+                        top: 12%;
+                        left: 5%;
+                        border: 1px solid $grey;
+                        color: white;
+                        background-color: $grey;
+                        border-radius: 5px;
+                        font-size: 13px;
+                        padding: 2px;
+                    }
+                    .organic{
+                        position: absolute;
+                        top: 12%;
+                        left: 5%;
+                        
+                        color: green;
+                        background-color: rgb(181, 250, 181);
+                        border-radius: 5px;
+                        font-size: 13px;
+                        padding: 2px;
+                        font-weight: 700;
+                    }
+                }
+                .card-body{
+                    .card-title{
+                        font-family: sans-serif;
+                        text-decoration: none;
+                        font-size: 15px;
+                        color: black;
+                        cursor: pointer;
+        
+                        &:hover{
+                            color: rgb(1, 1, 146);
+                        }
+                    }
+                    .stock{
+                        color: rgb(3, 160, 3);
+                        font-size: 13px;
+                        font-weight: bold;
+                    }
+                    i{
+                        color: rgb(255, 230, 0);
+                        font-size: 12px;
+                    }
+                    .grey{
+                        color: rgb(182, 181, 181);
+                    }
+                    .one{
+                        font-size: 12px;
+                        color: $grey;
+                    }
+                    .first-price{
+                        font-size: 15px;
+                        color: rgb(192, 192, 192);
+                        text-decoration: line-through;
+                        font-family: sans-serif;
+                    }
+                    .second-price{
+                        font-size: 18px;
+                        color: rgb(255, 45, 45);
+                        font-family: sans-serif;
+                    }
+                    .button{
+                        display: flex;
+                        justify-content: center;
+                        
+                        
+                        a{
+                            border-radius: 20px;
+                            width: 100%;
+                            background-color: navy;
+                            
+                        }
+                    }
+                    .first-price-range{
+                        font-size: 18px;
+                        color: rgb(255, 45, 45);
+                        font-family: sans-serif;
+                    }
+                    .second-price-range{
+                        font-size: 18px;
+                        color: rgb(255, 45, 45);
+                        font-family: sans-serif;
+                    }
+                    
+                }
+            }
+        }
+        .shop-pages{
+            text-align: center;
+            span{
+                font-size: 18px;
+                margin: 5px;
+                padding: 3px 10px;
+                
+                border-radius: 50%;
+                &:hover{
+                    background-color: $blue;
+                    color: white;
+                }
+
+            }
+            i{
+                font-size: 18px;
+                margin: 5px;
+                padding: 5px;
+                border-radius: 50%;
+                &:hover{
+                    background-color: $blue;
+                    color: white;
+                }
+            }
+        }
+    }
+}
